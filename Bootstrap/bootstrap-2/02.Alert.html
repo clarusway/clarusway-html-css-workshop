@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Alert</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+
+
+    <div class="container mt-5">
+        <p class="alert alert-primary text-success fw-bold shadow"> A simple primary alert !</p>
+        <p class="alert alert-danger"> Danger alert</p>
+        <p class="alert alert-warning"> warning alert</p>
+        <p class="alert alert-success d-flex align-items-center">
+            <i class="bi bi-check-circle-fill fs-3 me-3 text-info"></i>
+            <span> Login successfully </span>
+        </p>
+
+
+        <div class="alert alert-danger alert-dismissible fade show d-flex align-items-center position-fixed top-0 end-0 m-2">
+            <i class="bi bi-exclamation-triangle-fill fs-4 me-5"></i>
+            <span class="fw-bold"> Please provide username !</span>
+            <button class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+    
+  </body>
+</html>
