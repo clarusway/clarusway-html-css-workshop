@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 5 css file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap javascript file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- Mapbox CDN -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"
+      defer
+    ></script>
+
+    <script src="./main.js" defer></script>
+    <!-- custom css sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Claursway Bootcamp</title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-light bg-light fixed-top shadow-sm navbar-expand-lg"
+    >
+      <div class="container">
+        <a href="#home" class="navbar-brand d-flex align-items-center">
+          <img src="./img/logo.png" alt="Claursway logo" width="50" />
+          <h3>Claurswau Bootcamp</h3>
+        </a>
+
+        <!-- Navbar Toggler Button (small screen) -->
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links Navs -->
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#courses-section" class="nav-link"> Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="#faq-section" class="nav-link"> Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors-section" class="nav-link"> Instructors</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link"> Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- spacer height of the navbar -->
+    <div style="height: 75px;"></div>
+
+
+    <!-- Carousel section -->
+    <div id="main-carousel" class="carousel slide position-relative" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+            class="d-block w-100" alt="coding">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HTML & CSS Classes</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt minima quam tenetur vero in vitae distinctio mollitia tempora qui maiores iusto, et odio quaerat atque perspiciatis enim, facere porro animi.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Talk to job advisor</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore omnis, animi, earum explicabo quis neque repellat nesciunt tempora, sed rem voluptatum debitis possimus voluptatibus necessitatibus architecto incidunt! Ex, nesciunt itaque.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mobile Phone development</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id fuga voluptate quod sequi placeat quae architecto quis ad laboriosam debitis a distinctio ex praesentium ratione, harum ea quas maxime quam.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+    
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" ></span>
+        </button>
+      </div>
+    <!-- Showcase section -->
+    <section class="bg-light text-dark p-5 text-center text-sm-start">
+      <div
+        class="container d-sm-flex align-items-center justify-content-between"
+      >
+        <div>
+          <h1>
+            The IT Career of your Dreams <br />
+            <span class="text-danger"> Starts Here!</span>
+          </h1>
+          <p class="lead py-4">
+            Clarusway is a leading international software Bootcamp. Join a micro
+            class online with other trainees and learn coding skills with a
+            highly-skilled instructor.
+          </p>
+          <button class="btn btn-primary btn-lg">Start Your New Career</button>
+        </div>
+        <img
+          src="./img/showcase.webp"
+          alt="Showcase image"
+          class="img-fluid w-50 p-3 d-sm-block d-none"
+        />
+      </div>
+    </section>
+
+    <!-- Newsletter section -->
+
+    <section class="bg-main p-5 text-light">
+      <div
+        class="container d-md-flex justify-content-between align-items-center"
+      >
+        <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+        <div class="input-group news-input">
+          <input type="text" class="form-control" placeholder="Enter Email" />
+          <button class="btn btn-dark btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#newsletter-modal">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses-section" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img
+              src="./img/fundamentals.png"
+              alt="HTML-CSS course image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md">
+            <h2>Learn HTML & CSS</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              est, fuga voluptatem sed nulla ex minima odio ut ullam harum illo
+              illum molestias impedit saepe voluptate atque dolores adipisci
+              fugit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
+              vel! Minus ipsam dignissimos voluptatem sit natus similique nobis
+              expedita dolorum ut laudantium. Facilis a omnis repudiandae
+              repellendus, asperiores aliquid delectus?
+            </p>
+            <button class="btn btn-dark mt-3" type="button">
+              Read More <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md order-2">
+            <img
+              src="./img/react.png"
+              alt="HTML-CSS course image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md order-1">
+            <h2>Learn React</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              est, fuga voluptatem sed nulla ex minima odio ut ullam harum illo
+              illum molestias impedit saepe voluptate atque dolores adipisci
+              fugit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
+              vel! Minus ipsam dignissimos voluptatem sit natus similique nobis
+              expedita dolorum ut laudantium. Facilis a omnis repudiandae
+              repellendus, asperiores aliquid delectus?
+            </p>
+            <button class="btn btn-light mt-3" type="button">
+              Read More <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section id="support-section" class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-12 col-lg-4">
+            <div class="card text-dark shadow">
+              <div class="card-body">
+                <img
+                  src="./img/VIDEO.png"
+                  alt="Video image"
+                  class="img-fluid"
+                />
+                <h3 class="card-title">Watch sessions online</h3>
+                <p class="cardtext">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  eligendi consectetur odit inventore enim earum obcaecati sunt
+                  natus quisquam quibusdam doloribus repellendus necessitatibus,
+                  quaerat aperiam omnis nisi magnam asperiores voluptas!
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="card text-dark shadow">
+              <div class="card-body">
+                <img src="./img/call.png" alt="call image" class="img-fluid" />
+                <h3 class="card-title">Talk to an Advisor</h3>
+                <p class="cardtext">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  eligendi consectetur odit inventore enim earum obcaecati sunt
+                  natus quisquam quibusdam doloribus repellendus necessitatibus,
+                  quaerat aperiam omnis nisi magnam asperiores voluptas!
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="card text-dark shadow">
+              <div class="card-body">
+                <img src="./img/blog.png" alt="Blog image" class="img-fluid" />
+                <h3 class="card-title">Blog</h3>
+                <p class="cardtext">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  eligendi consectetur odit inventore enim earum obcaecati sunt
+                  natus quisquam quibusdam doloribus repellendus necessitatibus,
+                  quaerat aperiam omnis nisi magnam asperiores voluptas!
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq-section" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+        <div class="accordion accordion-flush" id="questions">
+          <div class="accordion-item">
+            <!-- header -->
+            <div class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-target="#question-1"
+                data-bs-toggle="collapse"
+              >
+                Why should I choose Clarusway?
+              </button>
+            </div>
+            <!-- body -->
+            <div
+              class="collapse accordion-collapse"
+              id="question-1"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Learning new skills can feel daunting. We understand and support
+                our students every step of the way – at every skill level! With
+                our innovative program, learning support is built-in. By design,
+                practical hands-on activities enhance classroom instruction for
+                maximum impact. Meaningful learning is essential for mastery –
+                we unlock the key to your complete understanding of the
+                material! We understand your busy life! We realize most of our
+                students will be juggling numerous obligations. We’ve tailored
+                our curriculum to flatten the learning curve. We prepare our
+                students for dream careers in just 6-8 months! Manage your
+                studies and meet your mentor around your busy schedule. We’re
+                ready to coach you through the process
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <!-- header -->
+            <div class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-target="#question-2"
+                data-bs-toggle="collapse"
+              >
+                Do I need to have prior coding and IT experience?
+              </button>
+            </div>
+            <!-- body -->
+            <div
+              class="collapse accordion-collapse"
+              id="question-2"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                No coding experience or IT background is necessary to enroll!
+                Our courses are tailored to provide a comprehensive learning
+                experience from beginner to intermediate level knowledge. We
+                uniquely tailor your learning journey to meet YOU where you’re
+                currently at. We coach you to the finish line to earn a
+                well-paying dream job in IT!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <!-- header -->
+            <div class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-target="#question-3"
+                data-bs-toggle="collapse"
+              >
+                How much time does your program take each week?
+              </button>
+            </div>
+            <!-- body -->
+            <div
+              class="collapse accordion-collapse"
+              id="question-3"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                During the program, plan to allocate at least 16-20 hours a week
+                for classroom work and additional projects. Personal discipline,
+                time management, and adequate preparation are the keys to ANY
+                life goals. Are you ready to level up?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <!-- header -->
+            <div class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-target="#question-4"
+                data-bs-toggle="collapse"
+              >
+                What are the tools I need before starting courses?
+              </button>
+            </div>
+            <!-- body -->
+            <div
+              class="collapse accordion-collapse"
+              id="question-4"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                You need to have a smartphone, a laptop with a minimum of 8 GB
+                of RAM, an i5 processor, Windows, Mac, or Ubuntu, and an extra
+                monitor. Instructional materials through the Learning Management
+                System (LMS) are included when you send the enrollment deposit.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <!-- header -->
+            <div class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-target="#question-5"
+                data-bs-toggle="collapse"
+              >
+                Is there a selection process or prerequisite for programs?
+              </button>
+            </div>
+            <!-- body -->
+            <div
+              class="collapse accordion-collapse"
+              id="question-5"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                No, you will not be required to pass a technical elimination
+                process to qualify. There will be a simple assessment of your
+                communication skills. From beginner to advanced, all skill
+                levels are welcome!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <!-- header -->
+            <div class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-target="#question-6"
+                data-bs-toggle="collapse"
+              >
+                Is there a selection process or prerequisite for programs?
+              </button>
+            </div>
+            <!-- body -->
+            <div
+              class="collapse accordion-collapse"
+              id="question-6"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                No, you will not be required to pass a technical elimination
+                process to qualify. There will be a simple assessment of your
+                communication skills. From beginner to advanced, all skill
+                levels are welcome!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructors -->
+    <section id="instructors-section" class="p-5 bg-main">
+      <div class="container">
+        <h2 class="text-center text-white">Our Instructors</h2>
+        <p class="lead text-center text-white mb-5">
+          Our Instructors all have 5+ yeard working as web developers in the
+          industry
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light shadow">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/1.jpg"
+                  alt="John Doe"
+                  class="img-fluid rounded-circle mb-3"
+                />
+                <h3 class="card-title">John Doe</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit natus consequuntur aliquam at vitae molestias
+                  voluptatem obcaecati cupiditate enim ipsa. Voluptas iusto
+                  praesentium excepturi architecto officia numquam porro
+                  voluptatibus ipsam!
+                </p>
+                <a href="#"> <i class="bi bi-twitter text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-facebook text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-linkedin text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-instagram text-dark mx-1"> </i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light shadow">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/1.jpg"
+                  alt="John Doe"
+                  class="img-fluid rounded-circle mb-3"
+                />
+                <h3 class="card-title">Sally Smith</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit natus consequuntur aliquam at vitae molestias
+                  voluptatem obcaecati cupiditate enim ipsa. Voluptas iusto
+                  praesentium excepturi architecto officia numquam porro
+                  voluptatibus ipsam!
+                </p>
+                <a href="#"> <i class="bi bi-twitter text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-facebook text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-linkedin text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-instagram text-dark mx-1"> </i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light shadow">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/2.jpg"
+                  alt="John Doe"
+                  class="img-fluid rounded-circle mb-3"
+                />
+                <h3 class="card-title">Adam Smith</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit natus consequuntur aliquam at vitae molestias
+                  voluptatem obcaecati cupiditate enim ipsa. Voluptas iusto
+                  praesentium excepturi architecto officia numquam porro
+                  voluptatibus ipsam!
+                </p>
+                <a href="#"> <i class="bi bi-twitter text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-facebook text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-linkedin text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-instagram text-dark mx-1"> </i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light shadow">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/2.jpg"
+                  alt="John Doe"
+                  class="img-fluid rounded-circle mb-3"
+                />
+                <h3 class="card-title">Nancy Johns</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit natus consequuntur aliquam at vitae molestias
+                  voluptatem obcaecati cupiditate enim ipsa. Voluptas iusto
+                  praesentium excepturi architecto officia numquam porro
+                  voluptatibus ipsam!
+                </p>
+                <a href="#"> <i class="bi bi-twitter text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-facebook text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-linkedin text-dark mx-1"> </i></a>
+                <a href="#"> <i class="bi bi-instagram text-dark mx-1"> </i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+
+    <section id="contact-section" class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center">Contact Us</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold"> Main Location:</span>
+                125 Main st. New York 1110
+              </li>
+
+              <li class="list-group-item">
+                <span class="fw-bold"> Enrollment Phone: </span>
+                000-000-0000
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold"> Student Phone: </span>
+                000-000-0000
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold"> Enrollment Email: </span>
+                enrollment@Clarusway.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center">
+        <div class="container">
+            <p class="lead">  Copyrights &copy; 2023 Claursway Bootcamp </p>
+        </div>
+    </footer>
+
+    <a href="#" class="position-fixed bottom-0 end-0 p-5" id="arrow-up">
+        <i class="bi bi-arrow-up-square-fill text-success h1"> </i>
+    </a>
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="newsletter-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"> Signed up Successfully! </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal">
+                <span >&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="text-center lead"> Thank you for subscribing to our news Letter</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger ">Unsubscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
