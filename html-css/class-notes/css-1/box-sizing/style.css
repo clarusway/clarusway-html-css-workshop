@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    padding: 10px;
+
+}
+
+button{
+    margin: 20px;
+    border: 2px solid navy;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px ;
+    cursor:pointer;
+}

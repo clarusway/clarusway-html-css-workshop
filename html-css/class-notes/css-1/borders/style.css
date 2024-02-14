@@ -1,0 +1,44 @@
+p.style{
+    /* border-width: 10px;
+    border-style: dashed;
+    border-style: dotted;
+    border-style: double;
+    border-style: groove;
+    border-style: outset;
+    border-style: inset;
+    border-style: ridge;
+    border-style: none;
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
+    border-top-color: green;
+    border-bottom-color: blue;
+    border-left-color: yellow;
+    border-right-color: red;
+    border-top-width: 2px;
+    border-bottom-width: 5px;
+    border-left-width: 7px;
+    border-right-width: 10px;
+    border-top-style: dashed;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-right-style: solid; */
+    /* one value top, left, right, bottom */
+    /* border-width: 10px; */
+    /* two values top/bottom , left/right */
+    /* border-width: 10px 5px; */
+    /* three values  top, left/right bottom*/
+    /* border-width: 1px 10px 20px; */
+    /* four values top, right, bottom, left */
+    /* border-width: 1px 3px 6px 9px;
+    border-color: red green blue yellow; */
+    border: 5px solid blue;
+    border: none;
+
+}
+
+button{
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+}
