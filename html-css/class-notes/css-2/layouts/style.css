@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#card, #card2{
+    max-width: 900px;
+    border: 1px solid #ccc;
+    margin: 50px auto;
+    padding: 20px 50px;
+    border-radius: 10px;
+    overflow: auto;
+    
+}
+
+#card p{
+ 
+    display: inline-block;
+    width: 69%;
+}
+
+#card img{
+    vertical-align: middle;
+    width: 30%;
+}
+
+
+
+
+#card2 p{
+ float: left;
+ width: 40%;
+}
+
+
+
+#card2 img{
+float: right;
+width: 300px;
+}
+
+h2{
+    clear: both;
+}
+
+
+
+/* a{
+    border: 1px solid black;
+    width: 300px;
+} */
